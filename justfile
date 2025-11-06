@@ -14,7 +14,7 @@ shell:
 # Install dependencies and tool globally
 install:
     uv sync
-    uv tool uninstall composify || true
+    uv tool uninstall appleease || true
     uv tool install --reinstall -e .
 
 # Run tests (compile check)
@@ -38,7 +38,7 @@ lint:
     uv run --with ruff ruff check src/composify
 
 # Full development setup
-dev: clean install check
+dev: clean install
     @echo "✓ Development environment ready"
 
 
