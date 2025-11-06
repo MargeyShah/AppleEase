@@ -31,11 +31,11 @@ clean:
 
 # Format code (optional - requires black)
 fmt:
-    uv run --with black black src/composify
+    uv run --with black black src/appleease
 
 # Run linter (optional - requires ruff)
 lint:
-    uv run --with ruff ruff check src/composify
+    uv run --with ruff ruff check src/appleease
 
 # Full development setup
 dev: clean install
